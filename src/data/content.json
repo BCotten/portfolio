@@ -5,17 +5,17 @@
     "cards": [
       {
         "title": "Projects",
-        "description": "View my latest work and projects",
+        "img": "code.jpg",
         "link": "#projects"
       },
       {
         "title": "About Me",
-        "description": "Learn more about my journey and skills",
+        "img": "about-me.webp",
         "link": "#about"
       },
       {
         "title": "Contact",
-        "description": "Let's connect and discuss opportunities",
+        "img": "letter.jpg",
         "link": "#contact"
       }
     ]
