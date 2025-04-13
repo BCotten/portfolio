@@ -20,122 +20,85 @@
       }
     ]
   },
-  "projects": [
-    {
-      "id": "project1",
-      "title": "E-Commerce Platform",
-      "description": "A modern e-commerce solution built with React and TailwindCSS",
-      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
-      "link": "/projects/project1",
-      "tools": ["React", "TypeScript", "TailwindCSS", "Redux", "Node.js"],
-      "details": [
-        {
-          "title": "Overview",
-          "content": "A full-featured e-commerce platform with modern UI/UX principles and robust functionality."
-        },
-        {
-          "title": "Features",
-          "content": "Product catalog, shopping cart, user authentication, order management, and admin dashboard."
-        },
-        {
-          "title": "Technical Details",
-          "content": "Built with React and TypeScript, utilizing Redux for state management and Node.js for the backend."
-        }
-      ],
-      "gallery": [
-        "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=1200&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80"
-      ],
-      "video": "https://example.com/project1-demo.mp4"
-    },
-    {
-      "id": "project2",
-      "title": "Task Management App",
-      "description": "Streamlined task management with real-time updates",
-      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80",
-      "link": "/projects/project2",
-      "tools": ["React", "Firebase", "TailwindCSS", "TypeScript"],
-      "details": [
-        {
-          "title": "Overview",
-          "content": "A collaborative task management application with real-time updates and team features."
-        },
-        {
-          "title": "Features",
-          "content": "Task creation, assignment, due dates, comments, and team collaboration tools."
-        },
-        {
-          "title": "Technical Details",
-          "content": "Implemented with React and Firebase for real-time functionality and data persistence."
-        }
-      ],
-      "gallery": [
-        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80"
-      ],
-      "video": "https://example.com/project2-demo.mp4"
-    },
-    {
-      "id": "project3",
-      "title": "Portfolio Generator",
-      "description": "Dynamic portfolio creation tool for developers",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
-      "link": "/projects/project3",
-      "tools": ["React", "Node.js", "MongoDB", "Express"],
-      "details": [
-        {
-          "title": "Overview",
-          "content": "A tool that helps developers create and maintain professional portfolio websites."
-        },
-        {
-          "title": "Features",
-          "content": "Custom themes, project showcases, skill highlighting, and contact form integration."
-        },
-        {
-          "title": "Technical Details",
-          "content": "Full-stack application using the MERN stack with custom theming engine."
-        }
-      ],
-      "gallery": [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80"
-      ],
-      "video": "https://example.com/project3-demo.mp4"
-    }
-  ],
-  "about": {
+  "projects": {
+    "title": "Projects",
     "cards": [
       {
-        "title": "My Journey",
-        "content": "Started my development journey in 2018, focusing on creating intuitive and engaging web experiences."
+        "title": "Project 1",
+        "description": "Project 1 Description",
+        "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+        "link": "/projects/project1"
       },
       {
-        "title": "Philosophy",
-        "content": "I believe in clean, maintainable code and user-centered design principles."
+        "title": "Project 2",
+        "description": "Project 2 Description",
+        "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+        "link": "/projects/project2"
       },
       {
-        "title": "Experience",
-        "content": "Worked with various startups and established companies, delivering high-quality web solutions."
-      },
-      {
-        "title": "Goals",
-        "content": "Continuously learning and growing while creating meaningful digital experiences."
+        "title": "Project 3",
+        "description": "Project 3 Description",
+        "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+        "link": "/projects/project3"
       }
     ]
   },
-  "skills": [
-    { "name": "HTML5", "icon": "FileCode" },
-    { "name": "CSS3", "icon": "FileCode2" },
-    { "name": "Sass", "icon": "Paintbrush" },
-    { "name": "Tailwind", "icon": "Wind" },
-    { "name": "JavaScript", "icon": "FileJson" },
-    { "name": "React", "icon": "Component" },
-    { "name": "Git", "icon": "GitBranch" },
-    { "name": "GitHub", "icon": "Github" }
-  ],
+  "about": {
+    "title": "About Me",
+    "cards": [
+      {
+        "title": "Certificate in Front-End Web Development British Columbia Institute of Technology",
+        "year": "2024 - 2025",
+        "content": "A Certificate in Front-End Web Development provided me with the skills to create visually appealing and interactive websites. The program covers essential web technologies such as HTML, CSS, JavaScript, and responsive design, ensuring I can build user-friendly interfaces. Through hands-on projects and practical exercises, graduates gain the ability to develop and maintain modern web applications. This certification prepares individuals for roles as front-end developers, web designers, and UI/UX specialists in the tech industry."
+      },
+      {
+        "title": "Skills & Tools",
+        "Skills & Tools": [
+          {
+            "name": "HTML5",
+            "icon": "FileCode"
+          },
+          {
+            "name": "CSS3",
+            "icon": "FileCode2"
+          },
+          {
+            "name": "Sass",
+            "icon": "Paintbrush"
+          },
+          {
+            "name": "Tailwind",
+            "icon": "Wind"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "FileJson"
+          },
+          {
+            "name": "React",
+            "icon": "Component"
+          },
+          {
+            "name": "Git",
+            "icon": "GitBranch"
+          },
+          {
+            "name": "GitHub",
+            "icon": "Github"
+          }
+        ]
+      },
+      {
+        "title": "Diploma in Computer Information Systems University of the Fraser Valley",
+        "year": "2017 - 2019, 2022 - 2024",
+        "content": "A Computer Information Systems diploma equipped me with essential skills in information technology, database management, and software development. The program focuses on practical applications and problem-solving in various business environments, preparing graduates for diverse roles in the IT sector. Students gain hands-on experience through labs and projects, ensuring they are well-prepared for the demands of the tech industry. With a curriculum that keeps pace with technological advancements, graduates are ready to tackle the evolving challenges of the IT world."
+      }
+    ]
+  },
   "contact": {
+    "title": "Contact Me",
     "email": "brandon.cotten@example.com",
-    "linkedin": "https://linkedin.com/in/brandon-cotten",
+    "linkedin": "https://linkedin.com/in/brandoncotten",
     "github": "https://github.com/brandon-cotten"
   }
 }

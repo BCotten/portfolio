@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "E-Commerce Platform",
+      "description": "A modern e-commerce solution built with React and TailwindCSS",
+      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+      "link": "/projects/project1",
+      "tools": ["React", "TypeScript", "TailwindCSS", "Redux", "Node.js"],
+      "details": [
+        {
+          "title": "Overview",
+          "content": "A full-featured e-commerce platform with modern UI/UX principles and robust functionality."
+        },
+        {
+          "title": "Features",
+          "content": "Product catalog, shopping cart, user authentication, order management, and admin dashboard."
+        },
+        {
+          "title": "Technical Details",
+          "content": "Built with React and TypeScript, utilizing Redux for state management and Node.js for the backend."
+        }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=1200&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80"
+      ],
+      "video": "https://example.com/project1-demo.mp4"
+    },
+    {
+      "id": "project2",
+      "title": "Task Management App",
+      "description": "Streamlined task management with real-time updates",
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80",
+      "link": "/projects/project2",
+      "tools": ["React", "Firebase", "TailwindCSS", "TypeScript"],
+      "details": [
+        {
+          "title": "Overview",
+          "content": "A collaborative task management application with real-time updates and team features."
+        },
+        {
+          "title": "Features",
+          "content": "Task creation, assignment, due dates, comments, and team collaboration tools."
+        },
+        {
+          "title": "Technical Details",
+          "content": "Implemented with React and Firebase for real-time functionality and data persistence."
+        }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80"
+      ],
+      "video": "https://example.com/project2-demo.mp4"
+    },
+    {
+      "id": "project3",
+      "title": "Portfolio Generator",
+      "description": "Dynamic portfolio creation tool for developers",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+      "link": "/projects/project3",
+      "tools": ["React", "Node.js", "MongoDB", "Express"],
+      "details": [
+        {
+          "title": "Overview",
+          "content": "A tool that helps developers create and maintain professional portfolio websites."
+        },
+        {
+          "title": "Features",
+          "content": "Custom themes, project showcases, skill highlighting, and contact form integration."
+        },
+        {
+          "title": "Technical Details",
+          "content": "Full-stack application using the MERN stack with custom theming engine."
+        }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop&q=80"
+      ],
+      "video": "https://example.com/project3-demo.mp4"
+    }
+  ]
+}
