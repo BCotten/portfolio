@@ -11,22 +11,22 @@ import {
 
 const Projects = () => {
   return (
-    <Carousel
-      opts={{ loop: true, dragFree: false, align: 'center' }}
-      className="pt-8"
-    >
+    <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8">
       <CarouselContent>
         {content.projects.cards.map((card, index) => (
-          <CarouselItem
-            className="bg-primary flex flex-col gap-4 rounded-md"
-            key={index}
-          >
-            <img src={card.image} alt={card.title} className="rounded-md" />
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-            <Button size="sm" variant="secondary" className="p-4">
-              <a href={card.link}>View Project</a>
-            </Button>
+          <CarouselItem key={index}>
+            <div className="bg-primary flex flex-col gap-4 rounded-md">
+              <img src={card.image} alt={card.title} className="rounded-t-md" />
+              <h3 className="font-title px-2 text-step-1">{card.title}</h3>
+              <p className="px-2 text-step--1">{card.description}</p>
+              <Button
+                size="sm"
+                variant="secondary"
+                className="mb-4 self-center p-4"
+              >
+                <a href={card.link}>More Details</a>
+              </Button>
+            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
