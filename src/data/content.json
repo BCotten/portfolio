@@ -53,22 +53,22 @@
       },
       {
         "title": "Skills & Tools",
-        "Skills & Tools": [
+        "skills": [
           {
             "name": "HTML5",
-            "icon": "FileCode"
+            "icon": "html5"
           },
           {
             "name": "CSS3",
-            "icon": "FileCode2"
+            "icon": "css3"
           },
           {
             "name": "Sass",
-            "icon": "Paintbrush"
+            "icon": "sass"
           },
           {
             "name": "Tailwind",
-            "icon": "Wind"
+            "icon": "tailwind"
           },
           {
             "name": "JavaScript",
@@ -98,7 +98,9 @@
   "contact": {
     "title": "Contact Me",
     "email": "brandon.cotten@example.com",
+    "linkedin-icon": "linkedin",
     "linkedin": "https://linkedin.com/in/brandoncotten",
+    "github-icon": "github",
     "github": "https://github.com/brandon-cotten"
   }
 }
