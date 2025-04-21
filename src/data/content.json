@@ -56,35 +56,35 @@
         "skills": [
           {
             "name": "HTML5",
-            "icon": "html5"
+            "icon": "html5.svg"
           },
           {
             "name": "CSS3",
-            "icon": "css3"
+            "icon": "css3.svg"
           },
           {
             "name": "Sass",
-            "icon": "sass"
+            "icon": "sass.svg"
           },
           {
             "name": "Tailwind",
-            "icon": "tailwind"
+            "icon": "tailwind.svg"
           },
           {
             "name": "JavaScript",
-            "icon": "FileJson"
+            "icon": "javascript.svg"
           },
           {
             "name": "React",
-            "icon": "Component"
+            "icon": "react.svg"
           },
           {
             "name": "Git",
-            "icon": "GitBranch"
+            "icon": "git.svg"
           },
           {
             "name": "GitHub",
-            "icon": "Github"
+            "icon": "github.svg"
           }
         ]
       },
