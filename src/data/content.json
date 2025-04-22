@@ -97,10 +97,11 @@
   },
   "contact": {
     "title": "Contact Me",
-    "email": "brandon.cotten@example.com",
-    "linkedin-icon": "linkedin",
-    "linkedin": "https://linkedin.com/in/brandoncotten",
-    "github-icon": "github",
-    "github": "https://github.com/brandon-cotten"
+    "statement": "Whether you have a project in mind or just want to chat tech, I'm always open to new opportunities and connections.",
+    "email": "bcotten117@gmail.com",
+    "linkedin-icon": "linkedin.svg",
+    "linkedin": "https://www.linkedin.com/in/brandoncotten",
+    "github-icon": "github.svg",
+    "github": "https://github.com/BCotten"
   }
 }
