@@ -38,6 +38,7 @@ declare module '@/data/content.json' {
     contact: {
       title: string;
       email: string;
+      statement: string;
       linkedinIcon: string;
       linkedin: string;
       githubIcon: string;
