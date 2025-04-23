@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import projectsData from '@/data/projects.json';
 import { Project } from '@/types/projects';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-
 
 interface ProjectsProps {
   projects?: Project[];
