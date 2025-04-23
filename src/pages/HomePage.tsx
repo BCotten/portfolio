@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Hero from '../components/my-components/Hero';
 import Projects from '../components/my-components/Projects';
 import About from '../components/my-components/About';
@@ -5,6 +6,25 @@ import Contact from '../components/my-components/Contact';
 import content from '../data/content.json';
 
 const HomePage = () => {
+  useEffect(() => {
+    const scrollToSection = (hash: string) => {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    };
+
+    const hash = window.location.hash.replace('#', '');
+    if (hash) scrollToSection(hash);
+
+    return () => {
+      window.history.replaceState(null, '', ' ');
+    };
+  }, []);
+
   return (
     <main>
       <section className="text-foreground mx-4 pt-8">
@@ -14,15 +34,15 @@ const HomePage = () => {
         </h2>
         <Hero />
       </section>
-      <section className="mx-4 pt-18">
+      <section id="projects" className="mx-4 pt-18">
         <h2 className="text-step-2 font-title">{content.projects.title}</h2>
         <Projects />
       </section>
-      <section className="mx-4 pt-18">
+      <section id="about" className="mx-4 pt-18">
         <h2 className="text-step-2 font-title">{content.about.title}</h2>
         <About />
       </section>
-      <section className="mx-4 pt-18">
+      <section id="contact" className="mx-4 pt-18">
         <h2 className="text-step-2 font-title">{content.contact.title}</h2>
         <Contact />
       </section>

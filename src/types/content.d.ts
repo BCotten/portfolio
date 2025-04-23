@@ -1,4 +1,3 @@
-// src/types/content.d.ts
 declare module '@/data/content.json' {
   interface BaseCard {
     title: string;
@@ -6,12 +5,6 @@ declare module '@/data/content.json' {
 
   export interface HeroCard extends BaseCard {
     img: string;
-    link: string;
-  }
-
-  export interface ProjectsCard extends BaseCard {
-    description: string;
-    image: string;
     link: string;
   }
 
@@ -29,7 +22,6 @@ declare module '@/data/content.json' {
     };
     projects: {
       title: string;
-      cards: ProjectsCard[];
     };
     about: {
       title: string;

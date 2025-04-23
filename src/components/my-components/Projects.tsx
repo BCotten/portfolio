@@ -1,5 +1,6 @@
-import content from '../../data/content.json';
-
+import { Link } from 'react-router-dom';
+import projectsData from '@/data/projects.json';
+import { Project } from '@/types/projects';
 import { Button } from '../ui/button';
 import {
   Carousel,
@@ -9,22 +10,34 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
-const Projects = () => {
+
+interface ProjectsProps {
+  projects?: Project[];
+}
+
+const Projects = ({ projects }: ProjectsProps) => {
+  const projectsToShow = projects || projectsData.projects;
+
   return (
     <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8">
       <CarouselContent>
-        {content.projects.cards.map((card, index) => (
-          <CarouselItem key={index}>
+        {projectsToShow.map((project) => (
+          <CarouselItem key={project.id}>
             <div className="bg-primary flex flex-col gap-4 rounded-md">
-              <img src={card.image} alt={card.title} className="rounded-t-md" />
-              <h3 className="font-title px-2 text-step-1">{card.title}</h3>
-              <p className="px-2 text-step--1">{card.description}</p>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full rounded-t-md object-cover"
+              />
+              <h3 className="font-title text-step-1 px-2">{project.title}</h3>
+              <p className="text-step--1 px-2">{project.description}</p>
               <Button
                 size="sm"
                 variant="secondary"
                 className="mb-4 self-center p-4"
+                asChild
               >
-                <a href={card.link}>More Details</a>
+                <Link to={`/projects/${project.id}`}>More Details</Link>
               </Button>
             </div>
           </CarouselItem>
