@@ -8,14 +8,14 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 
-import html5 from '../../assets/html5.svg';
-import css3 from '../../assets/css3.svg';
-import sass from '../../assets/sass.svg';
-import tailwind from '../../assets/tailwind.svg';
-import javascript from '../../assets/javascript.svg';
-import react from '../../assets/react.svg';
-import git from '../../assets/git.svg';
-import github from '../../assets/github.svg';
+import html5 from '@/assets/html5.svg';
+import css3 from '@/assets/css3.svg';
+import sass from '@/assets/sass.svg';
+import tailwind from '@/assets/tailwind.svg';
+import javascript from '@/assets/javascript.svg';
+import react from '@/assets/react.svg';
+import git from '@/assets/git.svg';
+import github from '@/assets/github.svg';
 
 type ImageMap = {
   [key: string]: string;

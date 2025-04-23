@@ -1,11 +1,11 @@
-import content from '../../data/content.json';
-import { Button } from '../ui/button';
-import { AspectRatio } from '../ui/aspect-ratio';
+import content from '@/data/content.json';
+import { Button } from '@/components/ui/button';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 import clsx from 'clsx';
 
-import code from '../../assets/code.jpg';
-import aboutMe from '../../assets/about-me.webp';
-import letter from '../../assets/letter.jpg';
+import code from '@/assets/code.jpg';
+import aboutMe from '@/assets/about-me.webp';
+import letter from '@/assets/letter.jpg';
 
 type ImageMap = {
   [key: string]: string;

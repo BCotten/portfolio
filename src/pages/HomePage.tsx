@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import Hero from '../components/my-components/Hero';
-import Projects from '../components/my-components/Projects';
-import About from '../components/my-components/About';
-import Contact from '../components/my-components/Contact';
-import content from '../data/content.json';
+import Hero from '@/components/my-components/Hero';
+import Projects from '@/components/my-components/Projects';
+import About from '@/components/my-components/About';
+import Contact from '@/components/my-components/Contact';
+import content from '@/data/content.json';
 
 const HomePage = () => {
   useEffect(() => {

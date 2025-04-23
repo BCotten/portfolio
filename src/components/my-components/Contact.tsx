@@ -1,9 +1,9 @@
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import content from '@/data/content.json';
 
-import linkedin from '../../assets/linkedin.svg';
-import github from '../../assets/github.svg';
+import linkedin from '@/assets/linkedin.svg';
+import github from '@/assets/github.svg';
 
 const Contact = () => {
   const [isCopied, setIsCopied] = useState(false);
