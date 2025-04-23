@@ -1,23 +1,60 @@
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 
 const Navigation = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const handleScroll = (hash: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }
+  };
+
   return (
     <nav className="bg-background p-4">
       <div className="flex flex-row px-4">
-        <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className='max-w-32' />
-        </a>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Logo" className="max-w-32" />
+        </Link>
 
         <div className="text-foreground px-8 font-base text-step-0 flex flex-col gap-2">
-          <a href="#projects" className="hover:text-accent">
+          <Link
+            to={isHomePage ? '#projects' : '/#projects'}
+            onClick={(e) => {
+              handleScroll('projects');
+              if (isHomePage) e.preventDefault();
+            }}
+            className="font-title hover:text-accent"
+          >
             Projects
-          </a>
-          <a href="#about" className="hover:text-accent">
+          </Link>
+          <Link
+            to={isHomePage ? '#about' : '/#about'}
+            onClick={(e) => {
+              handleScroll('about');
+              if (isHomePage) e.preventDefault();
+            }}
+            className="font-title hover:text-accent"
+          >
             About
-          </a>
-          <a href="#contact" className="hover:text-accent">
+          </Link>
+          <Link
+            to={isHomePage ? '#contact' : '/#contact'}
+            onClick={(e) => {
+              handleScroll('contact');
+              if (isHomePage) e.preventDefault();
+            }}
+            className="font-title hover:text-accent"
+          >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
