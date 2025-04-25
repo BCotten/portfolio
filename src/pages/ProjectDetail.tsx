@@ -40,16 +40,16 @@ const ProjectDetail = () => {
   );
 
   return (
-    <main>
+    <main className="max-w-[1200px] mx-auto">
       <section className="mx-4">
         <h1 className="text-step-3 font-title">{project.title}</h1>
-        <p className="text-step-0 font-title">{project.tools}</p>
-        <Accordion type="single" collapsible className="w-full">
+        <h2 className="text-step-0 font-title">{project.tools}</h2>
+        <Accordion type="single" collapsible className="w-full max-w-[800px] mt-8 lg:mx-auto">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-step-1 font-title">
               {project.overview.title}
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
               <p>{project.overview.duration}</p>
               <p>{project.overview.collaboration}</p>
               <p>{project.overview.rolesTitle}</p>
@@ -64,7 +64,7 @@ const ProjectDetail = () => {
             <AccordionTrigger className="text-step-1 font-title">
               {project.requirements.title}
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
               <ul className="list-disc space-y-2 pl-6">
                 {project.requirements.requirementsPoints.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -76,18 +76,18 @@ const ProjectDetail = () => {
             <AccordionTrigger className="text-step-1 font-title">
               {project.reflections.title}
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
               <div className="space-y-6">
                 <div>
-                  <h3 className="mb-2 text-xl font-semibold">
+                  <h4 className="mb-2 font-title text-step-0 font-semibold">
                     {project.reflections.sectionTitle1}
-                  </h3>
+                  </h4>
                   <p>{project.reflections.sectionContent}</p>
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-semibold">
+                  <h4 className="mb-2 font-title text-step-0 font-semibold">
                     {project.reflections.sectionTitle2}
-                  </h3>
+                  </h4>
                   <ul className="list-disc space-y-2 pl-6">
                     {project.reflections.sectionContent2.map((item, index) => (
                       <li key={index}>{item}</li>
@@ -98,21 +98,23 @@ const ProjectDetail = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <div>
-          <Button variant={'secondary'}>
+        <div className='mt-8 flex justify-between mx-auto max-w-[800px]'>
+          <Button variant={'secondary'} className='md:py-6'>
             <a
               href={project.button1Link}
               target="_blank"
               rel="noopener noreferrer"
+              className='font-title text-step-0 md:px-6'
             >
               Live Site
             </a>
           </Button>
-          <Button variant={'outline'}>
+          <Button variant={'outline'} className='md:py-6'>
             <a
               href={project.button2Link}
               target="_blank"
               rel="noopener noreferrer"
+              className='font-title text-step-0 md:px-6'
             >
               GitHub
             </a>
@@ -130,7 +132,7 @@ const ProjectDetail = () => {
         </h2>
         <Projects projects={otherProjects} />
       </section>
-      <footer>
+      <footer className='mt-18 max-w-[800px] mx-auto'>
         <div className="mt-4 mb-8 flex items-center justify-between">
           <a
             href={content.contact.linkedin}
@@ -146,6 +148,7 @@ const ProjectDetail = () => {
           <Button
             variant={isCopied ? 'default' : 'secondary'}
             onClick={handleCopyEmail}
+            className='font-title text-step-0 p-6'
           >
             {isCopied ? 'Copied!' : 'Copy Email'}
           </Button>

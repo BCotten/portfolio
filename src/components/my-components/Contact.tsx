@@ -20,39 +20,40 @@ const Contact = () => {
 
   return (
     <>
-      <h3 className="text-step-0 font-title mt-4">
+      <h3 className="text-step-0 font-title mt-12 max-w-[600px] mx-auto">
         {content.contact.statement}
       </h3>
-      <div className="mt-4 mb-8 flex items-center justify-between">
-        <a
-          href={content.contact.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={linkedin}
-            alt={content.contact.linkedin}
-            className="w-12 md:w-16"
-          />
-        </a>
-        <Button
-          variant={isCopied ? 'default' : 'secondary'}
-          onClick={handleCopyEmail}
-        >
-          {isCopied ? 'Copied!' : 'Copy Email'}
-        </Button>
-        <a
-          href={content.contact.github}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={github}
-            alt={content.contact.github}
-            className="w-12 md:w-16"
-          />
-        </a>
-      </div>
+      <div className="mt-4 mb-8 flex items-center justify-between max-w-[600px] mx-auto">
+          <a
+            href={content.contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={linkedin}
+              alt={content.contact.linkedin}
+              className="w-12 md:w-16"
+            />
+          </a>
+          <Button
+            variant={isCopied ? 'default' : 'secondary'}
+            onClick={handleCopyEmail}
+            className='font-title text-step-0 p-6'
+          >
+            {isCopied ? 'Copied!' : 'Copy Email'}
+          </Button>
+          <a
+            href={content.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={github}
+              alt={content.contact.github}
+              className="w-12 md:w-16"
+            />
+          </a>
+        </div>
     </>
   );
 };

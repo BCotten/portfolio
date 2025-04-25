@@ -18,7 +18,7 @@ const Projects = ({ projects }: ProjectsProps) => {
   const projectsToShow = projects || projectsData.projects;
 
   return (
-    <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8">
+    <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8 md:max-w-[400px]">
       <CarouselContent>
         {projectsToShow.map((project) => (
           <CarouselItem key={project.id}>
@@ -33,10 +33,10 @@ const Projects = ({ projects }: ProjectsProps) => {
               <Button
                 size="sm"
                 variant="secondary"
-                className="mb-4 self-center p-4"
+                className="mb-4 self-center md:py-6"
                 asChild
               >
-                <Link to={`/projects/${project.id}`}>More Details</Link>
+                <Link className='font-title text-step-0 md:px-6' to={`/projects/${project.id}`}>More Details</Link>
               </Button>
             </div>
           </CarouselItem>
