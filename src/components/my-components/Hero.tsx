@@ -33,12 +33,12 @@ const Hero = () => {
             <img
               src={imageMap[card.img]}
               alt={card.title}
-              className="absolute inset-0 h-full w-full rounded-md object-cover"
+              className="absolute inset-0 h-full w-[full] rounded-md object-cover"
             />
           </AspectRatio>
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <Button size="sm" variant="secondary" className="p-4">
-              <a href={card.link}>{card.title}</a>
+            <Button size="sm" variant="secondary" className="md:py-6">
+              <a className='font-title text-step-0 md:px-6' href={card.link}>{card.title}</a>
             </Button>
           </div>
         </div>

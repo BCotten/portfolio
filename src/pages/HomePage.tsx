@@ -26,8 +26,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main>
-      <section className="text-foreground mx-4 pt-8">
+    <main className='max-w-[1200px] mx-auto'>
+      <section className="text-foreground mx-4 pt-8 ">
         <h1 className="text-step-3 font-title">{content.hero.name}</h1>
         <h2 className="text-step-2 font-title max-w-44">
           {content.hero.title}

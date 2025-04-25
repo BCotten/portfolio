@@ -18,13 +18,14 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-background p-4">
+    <nav className="bg-background p-4 md:mx-auto md:max-w-[1200px]">
       <div className="flex flex-row px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="max-w-32" />
+          <img src={logo} alt="Logo" className="max-w-32 lg:max-w-48" />
         </Link>
 
-        <div className="text-foreground px-8 font-base text-step-0 flex flex-col gap-2">
+        <div className="text-foreground px-8 font-base text-step-0 flex flex-col gap-2 md:flex-row md:items-center md:gap-6 md:justify-end md:w-full
+        ">
           <Link
             to={isHomePage ? '#projects' : '/#projects'}
             onClick={(e) => {
