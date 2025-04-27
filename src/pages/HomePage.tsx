@@ -26,23 +26,23 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className='max-w-[1200px] mx-auto'>
-      <section className="text-foreground mx-4 pt-8 ">
+    <main className='max-w-[1200px] mx-auto grid gap-30 md:gap-50 lg:gap-70'>
+      <section className="text-foreground mx-4 pt-20">
         <h1 className="text-step-3 font-title">{content.hero.name}</h1>
         <h2 className="text-step-2 font-title max-w-44">
           {content.hero.title}
         </h2>
         <Hero />
       </section>
-      <section id="projects" className="mx-4 pt-18">
+      <section id="projects" className="mx-4">
         <h2 className="text-step-2 font-title">{content.projects.title}</h2>
         <Projects />
       </section>
-      <section id="about" className="mx-4 pt-18">
+      <section id="about" className="mx-4">
         <h2 className="text-step-2 font-title">{content.about.title}</h2>
         <About />
       </section>
-      <section id="contact" className="mx-4 pt-18">
+      <section id="contact" className="mx-4">
         <h2 className="text-step-2 font-title">{content.contact.title}</h2>
         <Contact />
       </section>

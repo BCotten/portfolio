@@ -38,7 +38,7 @@ const Contact = () => {
           <Button
             variant={isCopied ? 'default' : 'secondary'}
             onClick={handleCopyEmail}
-            className='font-title text-step-0 p-6'
+            className='font-title text-step-0 md:p-6'
           >
             {isCopied ? 'Copied!' : 'Copy Email'}
           </Button>

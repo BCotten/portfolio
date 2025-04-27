@@ -6,17 +6,17 @@
       {
         "title": "Projects",
         "img": "code.jpg",
-        "link": "#projects"
+        "link": "projects"
       },
       {
         "title": "About Me",
         "img": "about-me.webp",
-        "link": "#about"
+        "link": "about"
       },
       {
         "title": "Contact",
         "img": "letter.jpg",
-        "link": "#contact"
+        "link": "contact"
       }
     ]
   },
