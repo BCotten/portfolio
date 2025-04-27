@@ -34,9 +34,9 @@ const imageMap: ImageMap = {
 
 const About = () => {
   return (
-    <>
-    {/* BCIT Card */}
-      <Card className="mx-auto mt-4 max-w-xl">
+    <div className="mt-16 grid gap-4 lg:grid-cols-2 lg:grid-rows-3 lg:gap-12 lg:m-4 lg:mt-20"> {/* Changed parent container */}
+      {/* BCIT Card */}
+      <Card className="mx-auto max-w-xl lg:col-start-1 lg:col-end-2 lg:mt-0">
         <CardHeader>
           <CardTitle className="font-title text-step-1">
             {content.about.cards[0].title}
@@ -51,8 +51,9 @@ const About = () => {
           </p>
         </CardContent>
       </Card>
+
       {/* SKills & Tools Card */}
-      <Card className="mx-auto mt-4 max-w-xl">
+      <Card className="mx-auto mt-4 w-full max-w-xl lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:mt-0">
         <CardHeader>
           <CardTitle className="font-title text-step-1">
             {content.about.cards[1].title}
@@ -71,8 +72,9 @@ const About = () => {
           ))}
         </CardContent>
       </Card>
+
       {/* UFV Card */}
-      <Card className="mx-auto mt-4 max-w-xl">
+      <Card className="mx-auto mt-4 max-w-xl lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:mt-0">
         <CardHeader>
           <CardTitle className="font-title text-step-1">
             {content.about.cards[2].title}
@@ -87,7 +89,7 @@ const About = () => {
           </p>
         </CardContent>
       </Card>
-    </>
+    </div>
   );
 };
 

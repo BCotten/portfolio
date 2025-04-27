@@ -3,7 +3,7 @@
     {
       "id": "movie-database",
       "title": "Movie Database",
-      "description": "Project 1 Description",
+      "description": "",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
       "tools": "React | TanStack Query | TailwindCSS | React Router",
       "overview": {
@@ -47,39 +47,34 @@
     {
       "id": "bnmc-mri-clinic",
       "title": "BNMC MRI Clinic",
-      "description": "Project 2 Description",
+      "description": "",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
       "tools": "Wordpress|  |  ",
       "overview": {
         "title": "Project Overview",
         "duration": "Project Duration: 4 weeks",
         "collaboration": "Collaboration: Team of four",
-        "rolesTitle": "Role(s): Developer | UI/UX Designer | Team Lead",
+        "rolesTitle": "Role(s): Developer | UI/UX Designer",
         "overviewPoints": [
-          "This project is a React-based web application that integrates with the TMDB (The Movie Database) API to provide users with a comprehensive platform for browsing and discovering movies.",
-          "Users can search for films, view detailed information such as ratings, release dates, and synopses, and explore popular, upcoming, and top-rated movies.",
-          "The app features a responsive design, ensuring seamless usability across devices, and includes dynamic filtering and sorting options for an enhanced user experience.",
-          "By leveraging React's component-based architecture, the project delivers a fast, interactive, and visually appealing interface for movie enthusiasts."
+          ""
         ]
       },
       "requirements": {
         "title": "Project Requirements",
         "requirementsPoints": [
-          "The project requirements involved building an application connected to the themoviedb.org API, we use the TanStack Query Library to complete theses fetches . ",
-          "The main page needed to display a grid of at least 12 movies, with sorting options based on popularity, top ratings, current screenings, and upcoming releases.",
-          "Each movie card would link to a dedicated movie page, displaying detailed information like an overview and a backdrop image. Additionally, a favorites page was designed to show all movies saved by the user. "
+          ""
         ]
       },
       "reflections": {
         "title": "Reflections",
         "sectionTitle1": "How did I feel about it?",
-        "sectionContent": "Building the React database project was both challenging and rewarding, as it allowed me to deepen my understanding of state management and API integration. I felt a sense of accomplishment when I successfully implemented features like dynamic sorting and a synchronized favorites system. However, debugging and optimizing performance were occasionally frustrating, though they ultimately helped me grow as a developer.",
+        "sectionContent": "",
         "sectionTitle2": "What did I learn?",
         "sectionContent2": [
-          "Fetching Data with TanStack Query",
-          "Styling website with Tailwind",
-          "Installing both dev and regular dependencies",
-          "Trouble shooting errors"
+          "",
+          "",
+          "",
+          ""
         ]
       },
       "button1Link": "live-site",
@@ -91,39 +86,34 @@
     {
       "id": "black-jack-game",
       "title": "Black Jack Game",
-      "description": "Project 3 Description",
+      "description": "",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
       "tools": "HTML | CSS | JavaScript",
       "overview": {
         "title": "Project Overview",
         "duration": "Project Duration: 4 weeks",
-        "collaboration": "Collaboration: Team of four",
-        "rolesTitle": "Role(s): Developer | UI/UX Designer | Team Lead",
+        "collaboration": "Collaboration: Solo",
+        "rolesTitle": "Role(s): Developer | UI/UX Designer",
         "overviewPoints": [
-          "This project is a React-based web application that integrates with the TMDB (The Movie Database) API to provide users with a comprehensive platform for browsing and discovering movies.",
-          "Users can search for films, view detailed information such as ratings, release dates, and synopses, and explore popular, upcoming, and top-rated movies.",
-          "The app features a responsive design, ensuring seamless usability across devices, and includes dynamic filtering and sorting options for an enhanced user experience.",
-          "By leveraging React's component-based architecture, the project delivers a fast, interactive, and visually appealing interface for movie enthusiasts."
+          ""
         ]
       },
       "requirements": {
         "title": "Project Requirements",
         "requirementsPoints": [
-          "The project requirements involved building an application connected to the themoviedb.org API, we use the TanStack Query Library to complete theses fetches . ",
-          "The main page needed to display a grid of at least 12 movies, with sorting options based on popularity, top ratings, current screenings, and upcoming releases.",
-          "Each movie card would link to a dedicated movie page, displaying detailed information like an overview and a backdrop image. Additionally, a favorites page was designed to show all movies saved by the user. "
+          ""
         ]
       },
       "reflections": {
         "title": "Reflections",
         "sectionTitle1": "How did I feel about it?",
-        "sectionContent": "Building the React database project was both challenging and rewarding, as it allowed me to deepen my understanding of state management and API integration. I felt a sense of accomplishment when I successfully implemented features like dynamic sorting and a synchronized favorites system. However, debugging and optimizing performance were occasionally frustrating, though they ultimately helped me grow as a developer.",
+        "sectionContent": "",
         "sectionTitle2": "What did I learn?",
         "sectionContent2": [
-          "Fetching Data with TanStack Query",
-          "Styling website with Tailwind",
-          "Installing both dev and regular dependencies",
-          "Trouble shooting errors"
+          "",
+          "",
+          "",
+          ""
         ]
       },
       "button1Link": "live-site",
