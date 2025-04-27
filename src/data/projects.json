@@ -3,7 +3,7 @@
     {
       "id": "movie-database",
       "title": "Movie Database",
-      "description": "",
+      "description": "A React movie website with TMDB API for real-time information is about movies. It features responsive design, dynamic filtering, and pages with detailed information. As well a React movie website is built with TanStack Query for data-fetching optimization and Tailwind CSS, for responsive styling. Users can browse trending/upcoming movies with their favorite feature.",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
       "tools": "React | TanStack Query | TailwindCSS | React Router",
       "overview": {
@@ -12,30 +12,34 @@
         "collaboration": "Collaboration: Team of four",
         "rolesTitle": "Role(s): Developer | UI/UX Designer | Team Lead",
         "overviewPoints": [
-          "This project is a React-based web application that integrates with the TMDB (The Movie Database) API to provide users with a comprehensive platform for browsing and discovering movies.",
-          "Users can search for films, view detailed information such as ratings, release dates, and synopses, and explore popular, upcoming, and top-rated movies.",
-          "The app features a responsive design, ensuring seamless usability across devices, and includes dynamic filtering and sorting options for an enhanced user experience.",
-          "By leveraging React's component-based architecture, the project delivers a fast, interactive, and visually appealing interface for movie enthusiasts."
+          "a web application developed using React that”,  “uses the TMDB (The Movie Database) API to provide users with a comprehensive platform by which they can search and find movies.",
+          "user can view detailed information like ratings, release dates, and synopses, and find popular, upcoming, and highly-rated movies.",
+          "the application has a responsive design”, “is offers seamless usability on devices, dynamic filtering and sorting for enhanced user experience.",
+          "the project offers a fast, interactive, and visually appealing interface for movie lovers."
         ]
       },
       "requirements": {
         "title": "Project Requirements",
         "requirementsPoints": [
-          "The project requirements involved building an application connected to the themoviedb.org API, we use the TanStack Query Library to complete theses fetches . ",
-          "The main page needed to display a grid of at least 12 movies, with sorting options based on popularity, top ratings, current screenings, and upcoming releases.",
-          "Each movie card would link to a dedicated movie page, displaying detailed information like an overview and a backdrop image. Additionally, a favorites page was designed to show all movies saved by the user. "
+          "develop a movie database application from using themoviedb.org API",
+          "we used the TanStack Query Library to accomplish API fetches.",
+          "the main page needed to display a grid of at least 12 films",
+          "it can sort films by popularity, top rated, currently showing, and upcoming movies.",
+          "every film card would link to a special movie page",
+          "each page would display more information like an overview and a backdrop image.",
+          "favorites page was also added to display all the saved films."
         ]
       },
       "reflections": {
         "title": "Reflections",
         "sectionTitle1": "How did I feel about it?",
-        "sectionContent": "Building the React database project was both challenging and rewarding, as it allowed me to deepen my understanding of state management and API integration. I felt a sense of accomplishment when I successfully implemented features like dynamic sorting and a synchronized favorites system. However, debugging and optimizing performance were occasionally frustrating, though they ultimately helped me grow as a developer.",
+        "sectionContent": "Developing the React database project, as it taught me more about state management and API integration. I felt proud when I finally managed to implement features like dynamic sorting and a synchronized favorites system. However debugging and optimizing performance was frustrating at times. Overall, they ultimately made me a better developer.",
         "sectionTitle2": "What did I learn?",
         "sectionContent2": [
-          "Fetching Data with TanStack Query",
-          "Styling website with Tailwind",
-          "Installing both dev and regular dependencies",
-          "Trouble shooting errors"
+          "fetching Data with TanStack Query",
+          "styling website with Tailwind",
+          "installing both dev and regular dependencies",
+          "trouble shooting errors"
         ]
       },
       "button1Link": "live-site",
@@ -47,34 +51,40 @@
     {
       "id": "bnmc-mri-clinic",
       "title": "BNMC MRI Clinic",
-      "description": "",
+      "description": "WordPress site for medical imaging center features service listings, staff profiles, and patient resources. Online inquiry forms are integrated with cancellation policy compliance and responsive design for healthcare providers and patients.",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
-      "tools": "Wordpress|  |  ",
+      "tools": "Wordpress| Gravity Forms | PostHog",
       "overview": {
         "title": "Project Overview",
         "duration": "Project Duration: 4 weeks",
         "collaboration": "Collaboration: Team of four",
         "rolesTitle": "Role(s): Developer | UI/UX Designer",
         "overviewPoints": [
-          ""
+          "developed patient portal with MRI preparation guides and policy documents",
+          "developed physician-facing service listings with referral capabilities",
+          "added contact forms with required policy acknowledgments",
+          "developed staff biography pages with extensive career highlights"
         ]
       },
       "requirements": {
         "title": "Project Requirements",
         "requirementsPoints": [
-          ""
+          "develop accessible layout for patients and physicians",
+          "incorporated cancellation policy into every reservation flow",
+          "highlights MRI devices and staff qualifications",
+          "enhances load time for patient education PDFs"
         ]
       },
       "reflections": {
         "title": "Reflections",
         "sectionTitle1": "How did I feel about it?",
-        "sectionContent": "",
+        "sectionContent": "Implementing a contact form that had all fields was detail-oriented work. Working with a group of developers on a WordPress site gave us experience working on using version control.",
         "sectionTitle2": "What did I learn?",
         "sectionContent2": [
-          "",
-          "",
-          "",
-          ""
+          "git collaboration for WordPress",
+          "creating forms with Gravity Forms",
+          "adding Go maps and connecting API",
+          "styling with block editor"
         ]
       },
       "button1Link": "live-site",
@@ -86,7 +96,7 @@
     {
       "id": "black-jack-game",
       "title": "Black Jack Game",
-      "description": "",
+      "description": "Pure JavaScript was implemented to create a classic casino blackjack with responsive UI controls and computer-automated dealer logic. Users play against CPU-dealer with strategic hit/hold, ace value maximization, and real-time hand evaluation.",
       "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
       "tools": "HTML | CSS | JavaScript",
       "overview": {
@@ -95,25 +105,32 @@
         "collaboration": "Collaboration: Solo",
         "rolesTitle": "Role(s): Developer | UI/UX Designer",
         "overviewPoints": [
-          ""
+          "pure JavaScript DOM-manipulation built card game",
+          "examines complex card value calculations such as dynamic ace valuation (1 or 11)",
+          "features computer-automated dealer AI according to casino-standard rules (hit when <17)",
+          "adds win/lose conditions with instant feedback and new game functionality"
         ]
       },
       "requirements": {
         "title": "Project Requirements",
         "requirementsPoints": [
-          ""
+          "add card value calculation system treating aces as 1/11 dynamically",
+          "add player decision flow with hit/hold buttons and game state management",
+          "implement dealer AI under strict hit-on-<17 rules",
+          "construct real-time score comparison system with win/lose conditions",
+          "design responsive UI with card display animations and game controls"
         ]
       },
       "reflections": {
         "title": "Reflections",
         "sectionTitle1": "How did I feel about it?",
-        "sectionContent": "",
+        "sectionContent": "Developing this game pushed my understanding of state management in plain JavaScript. Although it was frustrating to debug sometimes, such as the complicated card value calculations, nevertheless getting the dealer AI up and running was hugely satisfying. Having to accomplish smooth UI interactions without frameworks was both limiting and educational.",
         "sectionTitle2": "What did I learn?",
         "sectionContent2": [
-          "",
-          "",
-          "",
-          ""
+          "DOM manipulation without frameworks",
+          "git collaboration for WordPress",
+          "complex conditional logic flows",
+          "CSS animations for card dealing effects"
         ]
       },
       "button1Link": "live-site",

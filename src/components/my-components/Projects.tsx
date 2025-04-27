@@ -18,7 +18,7 @@ const Projects = ({ projects }: ProjectsProps) => {
   const projectsToShow = projects || projectsData.projects;
 
   return (
-    <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8 md:max-w-[400px]">
+    <Carousel orientation="horizontal" className="mx-auto max-w-[202px] pt-8 md:max-w-[400px] lg:mt-20">
       <CarouselContent>
         {projectsToShow.map((project) => (
           <CarouselItem key={project.id}>
