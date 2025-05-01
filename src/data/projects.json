@@ -4,7 +4,7 @@
       "id": "movie-database",
       "title": "Movie Database",
       "description": "A React movie website with TMDB API for real-time information is about movies. It features responsive design, dynamic filtering, and pages with detailed information. As well a React movie website is built with TanStack Query for data-fetching optimization and Tailwind CSS, for responsive styling. Users can browse trending/upcoming movies with their favorite feature.",
-      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+      "image": "movie.jpg",
       "tools": "React | TanStack Query | TailwindCSS | React Router",
       "overview": {
         "title": "Project Overview",
@@ -42,17 +42,16 @@
           "trouble shooting errors"
         ]
       },
-      "button1Link": "live-site",
-      "button2Link": "github",
-      "image1": "image-1",
-      "image2": "image-2",
-      "video": "video"
+      "button1Link": "https://bcotten.ca/movie-database",
+      "button2Link": "https://github.com/BCotten/react-movie-database",
+      "image1": "movie1.jpg",
+      "image2": "movie2.jpg"
     },
     {
       "id": "bnmc-mri-clinic",
       "title": "BNMC MRI Clinic",
       "description": "WordPress site for medical imaging center features service listings, staff profiles, and patient resources. Online inquiry forms are integrated with cancellation policy compliance and responsive design for healthcare providers and patients.",
-      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+      "image": "mri.jpg",
       "tools": "Wordpress| Gravity Forms | PostHog",
       "overview": {
         "title": "Project Overview",
@@ -87,17 +86,16 @@
           "styling with block editor"
         ]
       },
-      "button1Link": "live-site",
-      "button2Link": "github",
-      "image1": "image-1",
-      "image2": "image-2",
-      "video": "video"
+      "button1Link": "https://bnmcmriclinic.bcitwebdeveloper.ca",
+      "button2Link": "",
+      "image1": "mri1.jpg",
+      "image2": "mri2.jpg"
     },
     {
       "id": "black-jack-game",
       "title": "Black Jack Game",
       "description": "Pure JavaScript was implemented to create a classic casino blackjack with responsive UI controls and computer-automated dealer logic. Users play against CPU-dealer with strategic hit/hold, ace value maximization, and real-time hand evaluation.",
-      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=80",
+      "image": "blackJack.jpg",
       "tools": "HTML | CSS | JavaScript",
       "overview": {
         "title": "Project Overview",
@@ -133,11 +131,10 @@
           "CSS animations for card dealing effects"
         ]
       },
-      "button1Link": "live-site",
-      "button2Link": "github",
-      "image1": "image-1",
-      "image2": "image-2",
-      "video": "video"
+      "button1Link": "https://bcotten.ca/black-jack/",
+      "button2Link": "https://github.com/BCotten/black-jack",
+      "image1": "blackJack1.jpg",
+      "image2": "blackJack2.jpg"
     }
   ]
 }

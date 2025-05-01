@@ -32,7 +32,6 @@ export interface Project {
   button2Link: string;
   image1: string;
   image2: string;
-  video: string;
 }
 
 const data: {

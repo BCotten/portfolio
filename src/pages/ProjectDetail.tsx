@@ -9,6 +9,26 @@ import { useState } from 'react';
 import linkedin from '@/assets/linkedin.svg';
 import github from '@/assets/github.svg';
 
+import blackJack1 from '@/assets/blackJack1.jpg';
+import blackJack2 from '@/assets/blackJack2.jpg';
+import movie1 from '@/assets/movie1.jpg';
+import movie2 from '@/assets/movie2.jpg';
+import mri1 from '@/assets/mri1.jpg';
+import mri2 from '@/assets/mri2.jpg';
+
+type ImageMap = {
+  [key: string]: string;
+};
+
+const imageMap: ImageMap = {
+  'blackJack1.jpg': blackJack1,
+  'blackJack2.jpg': blackJack2,
+  'movie1.jpg': movie1,
+  'movie2.jpg': movie2,
+  'mri1.jpg': mri1,
+  'mri2.jpg': mri2,
+};
+
 import {
   Accordion,
   AccordionContent,
@@ -40,16 +60,24 @@ const ProjectDetail = () => {
   );
 
   return (
-    <main className="max-w-[1200px] mx-auto">
+    <main
+      id="main"
+      tabIndex={-1}
+      className="mx-auto max-w-[1200px] outline-none"
+    >
       <section className="mx-4">
         <h1 className="text-step-3 font-title">{project.title}</h1>
         <h2 className="text-step-0 font-title">{project.tools}</h2>
-        <Accordion type="single" collapsible className="w-full max-w-[800px] mt-8 lg:mx-auto">
+        <Accordion
+          type="single"
+          collapsible
+          className="mt-8 w-full max-w-[800px] lg:mx-auto"
+        >
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-step-1 font-title">
               {project.overview.title}
             </AccordionTrigger>
-            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
+            <AccordionContent className="text-step--1 max-w-[700px] space-y-1">
               <p>{project.overview.duration}</p>
               <p>{project.overview.collaboration}</p>
               <p>{project.overview.rolesTitle}</p>
@@ -64,7 +92,7 @@ const ProjectDetail = () => {
             <AccordionTrigger className="text-step-1 font-title">
               {project.requirements.title}
             </AccordionTrigger>
-            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
+            <AccordionContent className="text-step--1 max-w-[700px] space-y-1">
               <ul className="list-disc space-y-2 pl-6">
                 {project.requirements.requirementsPoints.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -76,16 +104,16 @@ const ProjectDetail = () => {
             <AccordionTrigger className="text-step-1 font-title">
               {project.reflections.title}
             </AccordionTrigger>
-            <AccordionContent className='text-step--1 space-y-1 max-w-[700px]'>
+            <AccordionContent className="text-step--1 max-w-[700px] space-y-1">
               <div className="space-y-6">
                 <div>
-                  <h4 className="mb-2 font-title text-step-0 font-semibold">
+                  <h4 className="font-title text-step-0 mb-2 font-semibold">
                     {project.reflections.sectionTitle1}
                   </h4>
                   <p>{project.reflections.sectionContent}</p>
                 </div>
                 <div>
-                  <h4 className="mb-2 font-title text-step-0 font-semibold">
+                  <h4 className="font-title text-step-0 mb-2 font-semibold">
                     {project.reflections.sectionTitle2}
                   </h4>
                   <ul className="list-disc space-y-2 pl-6">
@@ -98,32 +126,43 @@ const ProjectDetail = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <div className='mt-8 flex justify-between mx-auto max-w-[800px]'>
-          <Button variant={'secondary'} className='md:py-6'>
+        <div className="mx-auto mt-8 flex max-w-[800px] justify-between">
+          <Button variant={'secondary'} className="md:py-6">
             <a
               href={project.button1Link}
               target="_blank"
               rel="noopener noreferrer"
-              className='font-title text-step-0 md:px-6'
+              className="font-title text-step-0 md:px-6"
             >
               Live Site
             </a>
           </Button>
-          <Button variant={'outline'} className='md:py-6'>
+          <Button variant={'outline'} className="md:py-6">
             <a
               href={project.button2Link}
               target="_blank"
               rel="noopener noreferrer"
-              className='font-title text-step-0 md:px-6'
+              className="font-title text-step-0 md:px-6"
             >
               GitHub
             </a>
           </Button>
         </div>
         <div>
-          <img src={project.image1} alt="Project screenshot 1" />
-          <video></video>
-          <img src={project.image2} alt="Project screenshot 2" />
+          {project.image1 && (
+            <img
+              src={imageMap[project.image1]}
+              alt="Project screenshot 1"
+              className="mb-4"
+            />
+          )}
+          {project.image2 && (
+            <img
+              src={imageMap[project.image2]}
+              alt="Project screenshot 2"
+              className="mb-4"
+            />
+          )}
         </div>
       </section>
       <section id="projects" className="mx-4 pt-18">
@@ -132,7 +171,7 @@ const ProjectDetail = () => {
         </h2>
         <Projects projects={otherProjects} />
       </section>
-      <footer className='mt-18 max-w-[800px] mx-auto'>
+      <footer className="mx-auto mt-18 max-w-[800px]">
         <div className="mt-4 mb-8 flex items-center justify-between">
           <a
             href={content.contact.linkedin}
@@ -148,7 +187,7 @@ const ProjectDetail = () => {
           <Button
             variant={isCopied ? 'default' : 'secondary'}
             onClick={handleCopyEmail}
-            className='font-title text-step-0 p-6'
+            className="font-title text-step-0 p-6"
           >
             {isCopied ? 'Copied!' : 'Copy Email'}
           </Button>
