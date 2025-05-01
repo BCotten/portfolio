@@ -16,7 +16,7 @@ import mri from '@/assets/mri.jpg';
 
 type ImageMap = {
   [key: string]: string;
-}
+};
 
 const imageMap: ImageMap = {
   'blackJack.jpg': blackJack,
@@ -58,6 +58,9 @@ const Projects = ({ projects }: ProjectsProps) => {
                 <Link
                   className="font-title text-step-0 md:px-6"
                   to={`/projects/${project.id}`}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                  }
                 >
                   More Details
                 </Link>
