@@ -26,7 +26,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className='max-w-[1200px] mx-auto grid gap-30 md:gap-50 lg:gap-70'>
+    <main id="main" tabIndex={-1} className='max-w-[1200px] mx-auto grid gap-30 md:gap-50 lg:gap-70 outline-none'>
       <section className="text-foreground mx-4 pt-20">
         <h1 className="text-step-3 font-title">{content.hero.name}</h1>
         <h2 className="text-step-2 font-title max-w-44">

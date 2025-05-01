@@ -37,6 +37,7 @@
   --muted: #1a2a3f;
   --muted-foreground: #94a3b8;
   --accent: #b68f1f;
+  --accent-bright: #fbbf24;
   --accent-foreground: #fef3c7;
   --destructive: #b91c1c;
   --border: rgba(229, 239, 251, 0.1);
@@ -130,10 +131,32 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
   body {
     @apply bg-background text-foreground;
+  }
+  [tabindex]:focus-visible,
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid hsl(var(--accent-bright));
+    outline-offset: 2px;
+    border-radius: calc(var(--radius) - 2px);
+  }
+
+  /* Special case for skip link */
+  a[href='#main']:focus-visible {
+    outline: 3px dashed hsl(var(--accent-bright))!important; /* More prominent style */
+    outline-offset: 2px!important;
+    box-shadow: none!important; /* Remove redundant box-shadow */
+    background-color: hsl(var(--accent-bright) / 20); /* Optional background for better visibility */
+    color: hsl(var(--accent-foreground)); /* Ensure text color is readable */
+    padding: 0.25rem 0.5rem; /* Add some padding */
+    border-radius: calc(var(--radius) - 4px); /* Adjust border-radius */
+  }
+
+  /* Ensure the home button focus is visible */
+ .home-link:focus-visible {
+    outline: 2px solid hsl(var(--accent-bright));
+    outline-offset: 2px;
+    border-radius: calc(var(--radius) - 2px);
   }
 }
