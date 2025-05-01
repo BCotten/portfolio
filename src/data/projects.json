@@ -52,7 +52,7 @@
       "title": "BNMC MRI Clinic",
       "description": "WordPress site for medical imaging center features service listings, staff profiles, and patient resources. Online inquiry forms are integrated with cancellation policy compliance and responsive design for healthcare providers and patients.",
       "image": "mri.jpg",
-      "tools": "Wordpress| Gravity Forms | PostHog",
+      "tools": "Wordpress | Gravity Forms | PostHog",
       "overview": {
         "title": "Project Overview",
         "duration": "Project Duration: 4 weeks",

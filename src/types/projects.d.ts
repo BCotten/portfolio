@@ -28,8 +28,8 @@ export interface Project {
   overview: ProjectOverview;
   requirements: ProjectRequirements;
   reflections: ProjectReflections;
-  button1Link: string;
-  button2Link: string;
+  button1Link?: string;
+  button2Link?: string;
   image1: string;
   image2: string;
 }

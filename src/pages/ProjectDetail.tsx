@@ -126,41 +126,47 @@ const ProjectDetail = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <div className="mx-auto mt-8 flex max-w-[800px] justify-between">
-          <Button variant={'secondary'} className="md:py-6">
-            <a
-              href={project.button1Link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-title text-step-0 md:px-6"
-            >
-              Live Site
-            </a>
-          </Button>
-          <Button variant={'outline'} className="md:py-6">
-            <a
-              href={project.button2Link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-title text-step-0 md:px-6"
-            >
-              GitHub
-            </a>
-          </Button>
-        </div>
-        <div>
+        {(project.button1Link?.trim() || project.button2Link?.trim()) && (
+          <div className="mx-auto mt-8 flex max-w-[800px] justify-between">
+            {project.button1Link?.trim() && (
+              <Button variant={'secondary'} className="md:py-6">
+                <a
+                  href={project.button1Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-title text-step-0 md:px-6"
+                >
+                  Live Site
+                </a>
+              </Button>
+            )}
+            {project.button2Link?.trim() && (
+              <Button variant={'outline'} className="md:py-6">
+                <a
+                  href={project.button2Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-title text-step-0 md:px-6"
+                >
+                  GitHub
+                </a>
+              </Button>
+            )}
+          </div>
+        )}
+        <div className="mx-auto mt-8 max-w-[800px] md:flex md:justify-between md:gap-4">
           {project.image1 && (
             <img
               src={imageMap[project.image1]}
               alt="Project screenshot 1"
-              className="mb-4"
+              className="mx-auto mb-4 max-w-[300px] md:mx-0"
             />
           )}
           {project.image2 && (
             <img
               src={imageMap[project.image2]}
               alt="Project screenshot 2"
-              className="mb-4"
+              className="mx-auto mb-4 max-w-[300px] md:mx-0"
             />
           )}
         </div>
@@ -171,7 +177,7 @@ const ProjectDetail = () => {
         </h2>
         <Projects projects={otherProjects} />
       </section>
-      <footer className="mx-auto mt-18 max-w-[800px]">
+      <div className="mx-4 mt-18 max-w-[800px] md:mx-auto">
         <div className="mt-4 mb-8 flex items-center justify-between">
           <a
             href={content.contact.linkedin}
@@ -187,7 +193,7 @@ const ProjectDetail = () => {
           <Button
             variant={isCopied ? 'default' : 'secondary'}
             onClick={handleCopyEmail}
-            className="font-title text-step-0 p-6"
+            className="font-title text-step-0 md:p-6"
           >
             {isCopied ? 'Copied!' : 'Copy Email'}
           </Button>
@@ -203,7 +209,7 @@ const ProjectDetail = () => {
             />
           </a>
         </div>
-      </footer>
+      </div>
     </main>
   );
 };
